@@ -1,0 +1,14 @@
+{
+	"name": "ngx-pixi",
+	"version": "0.0.1",
+	"author": "Artem Ibatullin",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Ledzz/ngx-pixi"
+	},
+	"peerDependencies": {
+		"@angular/common": "^8.2.14",
+		"@angular/core": "^8.2.14",
+		"pixi.js": "^5.2.0"
+	}
+}

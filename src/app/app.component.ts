@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'pixi-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.styl']
+	selector: 'demo-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.styl'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  title = 'pixi';
+
 }

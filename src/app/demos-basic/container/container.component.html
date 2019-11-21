@@ -1,0 +1,20 @@
+<pixi-app
+	backgroundColor='0x1099bb'
+	(tick)='onTick($event)'
+>
+	<pixi-container
+		#container
+		[x]='400'
+		[y]='300'
+		[pivot.x]='container?.element?.width / 2'
+		[pivot.y]='container?.element?.height / 2'
+		[rotation]='rotation'
+	>
+		<pixi-sprite
+			texture='/assets/bunny.png'
+			*ngFor='let i of array25'
+			[x]='(i % 5) * 40'
+			[y]='floor(i / 5) * 40'
+		></pixi-sprite>
+	</pixi-container>
+</pixi-app>
