@@ -1,5 +1,5 @@
 {
-	"name": "pixi",
+	"name": "@ledzz/ngx-pixi",
 	"version": "0.0.0",
 	"scripts": {
 		"ng": "ng",
