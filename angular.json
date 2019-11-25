@@ -18,6 +18,8 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
+						"baseHref": "/ngx-pixi/",
+						"deployUrl": "/ngx-pixi/",
 						"outputPath": "dist/pixi-demo",
 						"index": "src/index.html",
 						"main": "src/main.ts",
