@@ -19,10 +19,10 @@
 			"dom"
 		],
 		"paths": {
-			"ngx-pixi": [
+			"@ledzz/ngx-pixi": [
 				"dist/ngx-pixi"
 			],
-			"ngx-pixi/*": [
+			"@ledzz/ngx-pixi/*": [
 				"dist/ngx-pixi/*"
 			]
 		}

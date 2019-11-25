@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxPixiModule } from 'ngx-pixi';
+import { NgxPixiModule } from '@ledzz/ngx-pixi';
 import { ContainerComponent } from './demos-basic/container/container.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
 	declarations: [
@@ -12,7 +13,9 @@ import { ContainerComponent } from './demos-basic/container/container.component'
 
 	],
 	imports: [
-		BrowserModule, NgxPixiModule
+		BrowserModule,
+		NgxPixiModule,
+		AppRoutingModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

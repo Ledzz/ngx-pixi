@@ -1,10 +1,11 @@
 {
 	"name": "@ledzz/ngx-pixi",
 	"version": "0.0.0",
+	"license": "MIT",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
-		"build": "ng build",
+		"build": "ng build -c=production",
 		"build:lib": "cp README.md projects/ngx-pixi/ && ng build ngx-pixi",
 		"test": "ng test",
 		"lint": "ng lint",
@@ -12,7 +13,6 @@
 		"lib": "ng build ngx-pixi --watch",
 		"lib:publish": "npm run-script build:lib && cd dist/ngx-pixi && npm publish"
 	},
-	"private": true,
 	"dependencies": {
 		"@angular/animations": "~8.2.14",
 		"@angular/common": "~8.2.14",
