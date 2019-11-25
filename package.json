@@ -5,7 +5,7 @@
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
-		"build": "ng build -c=production",
+		"build": "ng build -c=production && cp dist/pixi-demo/index.html dist/pixi-demo/404.html",
 		"build:lib": "cp README.md projects/ngx-pixi/ && ng build ngx-pixi",
 		"test": "ng test",
 		"lint": "ng lint",
