@@ -5,12 +5,12 @@
 		"ng": "ng",
 		"start": "ng serve",
 		"build": "ng build",
-		"build:lib": "ng build ngx-pixi",
+		"build:lib": "cp README.md projects/ngx-pixi/ && ng build ngx-pixi",
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"lib": "ng build ngx-pixi --watch",
-		"lib:publish": "ng build ngx-pixi && cd dist/ngx-pixi && npm publish"
+		"lib:publish": "npm run-script build:lib && cd dist/ngx-pixi && npm publish"
 	},
 	"private": true,
 	"dependencies": {

@@ -1,27 +1,55 @@
-# Pixi
+# ngx-pixi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+Angular bindings for [pixi.js](https://pixijs.io/)
 
-## Development server
+### !!!
+This library is in development and it's definetly not ready for production. Any help appreciated.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Usage
 
-## Code scaffolding
+Import module and add to your AppModule:
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+import { AppComponent } from './app.component';
+import { NgxPixiModule } from 'ngx-pixi';
 
-## Build
+@NgModule({
+	declarations: [
+		AppComponent
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+	],
+	imports: [
+		BrowserModule, NgxPixiModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
+})
+export class AppModule {
+}
 
-## Running unit tests
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+then use like this:
+```angular2html
+<pixi-app backgroundColor='0x1099bb' (tick)='onTick($event)'>
+  <pixi-container
+    #container
+    [x]='400'
+    [y]='300'
+  >
+    <pixi-sprite texture='/assets/bunny.png'></pixi-sprite>
+  </pixi-container>
+</pixi-app>
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Progress:
+|Component     |Base implementation  |All inputs|All outputs|
+|--------------|---------------------|----------|-----------|
+|App           |✔️                |❌        |❌         |
+|Container     |✔️                |❌        |❌         |
+|Graphics      |✔️                |❌        |❌         |
+|Rectangle     |✔️                |❌        |❌         |
+|Sprite        |✔️                |❌        |❌         |
+|Text          |✔️                |❌        |❌         |

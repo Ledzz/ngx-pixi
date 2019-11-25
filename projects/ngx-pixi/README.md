@@ -1,4 +1,4 @@
-# NgxPixi
+# ngx-pixi
 
 Angular bindings for [pixi.js](https://pixijs.io/)
 
