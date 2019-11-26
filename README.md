@@ -47,8 +47,8 @@ then use like this:
 ### Progress:
 |Component     |Base implementation  |All inputs|All outputs|
 |--------------|---------------------|----------|-----------|
-|App           |✔️                |❌        |❌         |
-|Container     |✔️                |❌        |❌         |
+|App           |✔️                |✔️     |✔️     |
+|Container     |✔️                |✔️     |✔️     |
 |Graphics      |✔️                |❌        |❌         |
 |Rectangle     |✔️                |❌        |❌         |
 |Sprite        |✔️                |❌        |❌         |

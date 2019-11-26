@@ -1,6 +1,6 @@
 {
 	"name": "@ledzz/ngx-pixi",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"author": "Artem Ibatullin",
 	"license": "MIT",
 	"repository": {
@@ -10,6 +10,7 @@
 	"peerDependencies": {
 		"@angular/common": "^8.2.14",
 		"@angular/core": "^8.2.14",
+		"lodash": "^4.17.15",
 		"pixi.js": "^5.2.0"
 	}
 }
